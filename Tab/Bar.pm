@@ -18,7 +18,7 @@ sub BUILD {
 
 	# Check tabs.
 	check_required($self, 'tabs');
-	check_array_object($self, 'tabs', 'Data::Tab');
+	check_array_object($self, 'tabs', 'Data::Tab', 'Tab');
 
 	return;
 }
