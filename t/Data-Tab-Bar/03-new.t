@@ -38,8 +38,8 @@ eval {
 		'tabs' => ['bad'],
 	);
 };
-is($EVAL_ERROR, "Tab isn't 'Data::Tab' object.\n",
-	"Tab isn't 'Data::Tab' object.");
+is($EVAL_ERROR, "Parameter 'tabs' with array must contain 'Data::Tab' objects.\n",
+	"Parameter 'tabs' with array must contain 'Data::Tab' objects (bad).");
 clean();
 
 # Test.
@@ -49,6 +49,6 @@ eval {
 		'tabs' => [$mock],
 	);
 };
-is($EVAL_ERROR, "Tab isn't 'Data::Tab' object.\n",
-	"Tab isn't 'Data::Tab' object.");
+is($EVAL_ERROR, "Parameter 'tabs' with array must contain 'Data::Tab' objects.\n",
+	"Parameter 'tabs' with array must contain 'Data::Tab' objects (different object).");
 clean();

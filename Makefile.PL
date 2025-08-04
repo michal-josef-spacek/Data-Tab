@@ -20,6 +20,7 @@ readme_from 'Tab.pm';
 recursive_author_tests('xt');
 requires 'Mo' => 0;
 requires 'Mo::utils' => 0.05;
+requires 'Mo::utils::Array' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-Tab/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Data-Tab';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Data-Tab';

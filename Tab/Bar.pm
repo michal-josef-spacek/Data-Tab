@@ -4,7 +4,8 @@ use strict;
 use warnings;
 
 use Mo qw(build default is);
-use Mo::utils qw(check_array_object check_required);
+use Mo::utils qw(check_required);
+use Mo::utils::Array qw(check_array_object);
 
 our $VERSION = 0.01;
 
@@ -18,7 +19,7 @@ sub BUILD {
 
 	# Check tabs.
 	check_required($self, 'tabs');
-	check_array_object($self, 'tabs', 'Data::Tab', 'Tab');
+	check_array_object($self, 'tabs', 'Data::Tab');
 
 	return;
 }
